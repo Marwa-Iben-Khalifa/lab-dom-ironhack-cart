@@ -2,6 +2,15 @@
 
 function updateSubtotal(product) {
   console.log('Calculating subtotal, yey!');
+  window.addEventListener('load', () => {
+    const calculatePricesBtn = document.getElementById('calculate');
+    calculatePricesBtn.onclick= function(){
+      alert('Calculate Prices clicked!')}
+    calculatePricesBtn.addEventListener('click', calculateAll);
+    const price = product.querySelector('.price span');
+    const quantity = product.querySelector('.quantity span');
+
+  });
 
   //... your code goes here
 }
